@@ -61,7 +61,7 @@ body {
   }
 
   .header {
-    background-color: #6dd1c4;
+    background-color: #6e6e6e;
     padding: 30px 40px;
     color: white;
     text-align: center;
@@ -81,21 +81,22 @@ body {
     padding: 10px;
     float: left;
     font-size: 16px;
+    border-radius: 10px;
   }
 
-  button {
+  span {
     position: relative;
     top: 10px;
     padding: 10px;
     width: 49%;
     background: #d9d9d9;
-    color: #555;
+    color: rgb(65, 64, 64);
     float: left;
     text-align: center;
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
-    border-radius: 0px;
+    border-radius: 5px;
     border-color: #555;
   }
 
@@ -107,12 +108,12 @@ body {
     margin-left: 1%;
   }
 
-  button#addBtn:hover {
+  span#addBtn:hover {
     background-color: #bbb;
     color: rgb(0, 0, 0);
   }
 
-  button#clearBtn:hover {
+  span#clearBtn:hover {
     background-color: rgb(218, 99, 99);
     color: rgb(0, 0, 0);
   }

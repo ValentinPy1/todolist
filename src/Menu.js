@@ -29,8 +29,8 @@ export default function Menu({todos, setTodos}) {
             type='text'
             onKeyPress={(event) => {if (event.key == 'Enter') addTodo()}}
         />
-        <button id="addBtn" onClick={addTodo}>Add Todo</button>
-        <button id="clearBtn" onClick={clearComplete}>Clear Completed</button>
+        <span id="addBtn" onClick={addTodo}>Add Todo</span>
+        <span id="clearBtn" onClick={clearComplete}>Clear Completed</span>
     </div>
   )
 }
