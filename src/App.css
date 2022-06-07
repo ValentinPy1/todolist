@@ -1,15 +1,16 @@
-/* Include the padding and border in an element's total width and height */
+body {
+  margin: 0;
+}
+
 * {
     box-sizing: border-box;
   }
 
-  /* Remove margins and padding from the list */
   ul {
     margin: 0;
     padding: 0;
   }
 
-  /* Style the list items */
   .todo {
     cursor: pointer;
     position: relative;
@@ -18,32 +19,22 @@
     background: #eee;
     font-size: 18px;
     transition: 0.2s;
-
-    /* make the list items unselectable */
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
   }
 
-  /* Set all odd list items to a different color (zebra-stripes) */
   .todo:nth-child(odd) {
     background: #f9f9f9;
   }
 
-  /* Darker background-color on hover */
   .todo:hover {
     background: #ddd;
   }
 
-  /* When clicked on, add a background color and strike out text */
   .todo.complete {
     background: rgb(126, 189, 101);
     color: #fff;
     text-decoration: line-through;
   }
 
-  /* Add a "checked" mark when clicked on */
   .todo.complete::before {
     content: '';
     position: absolute;
@@ -57,7 +48,6 @@
     width: 7px;
   }
 
-  /* Style the close button */
   .close {
     position: absolute;
     right: 0;
@@ -70,7 +60,6 @@
     color: white;
   }
 
-  /* Style the header */
   .header {
     background-color: #6dd1c4;
     padding: 30px 40px;
@@ -78,14 +67,12 @@
     text-align: center;
   }
 
-  /* Clear floats after the header */
   .header:after {
     content: "";
     display: table;
     clear: both;
   }
 
-  /* Style the input */
   input {
     margin: 0;
     border: none;
@@ -96,14 +83,11 @@
     font-size: 16px;
   }
 
-  /* Style the "Add" button */
   button {
     position: relative;
     top: 10px;
-    margin-right: 2.5%;
-    margin-left: 2.5%;
     padding: 10px;
-    width: 45%;
+    width: 49%;
     background: #d9d9d9;
     color: #555;
     float: left;
@@ -111,8 +95,16 @@
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s;
-    border-radius: 30px;
+    border-radius: 0px;
     border-color: #555;
+  }
+
+  #addBtn {
+    margin-right: 1%;
+  }
+
+  #clearBtn {
+    margin-left: 1%;
   }
 
   button#addBtn:hover {

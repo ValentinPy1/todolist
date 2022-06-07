@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import TodoList from "./TodoList.js";
 import Menu from './Menu.js';
-import './App.css'
 
 const LOCAL_STORAGE_KEY = 'todoApp.todos';
 
